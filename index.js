@@ -57,8 +57,6 @@ class ReactWizard extends React.Component {
   componentDidMount() {
     this.refreshAnimation(0);
 
-    console.log(this.props.steps);
-
     window.addEventListener("resize", this.updateWidth.bind(this));
   }
   componentWillUnmount(){
@@ -248,15 +246,7 @@ class ReactWizard extends React.Component {
                     );
                   })}
                 </Nav>
-                <div className="moving-tab" style={this.state.movingTabStyle}>
-                  {
-                    this.props.steps[this.state.currentStep].stepIcon !== undefined &&
-                    this.props.steps[this.state.currentStep].stepIcon !== "" ? (
-                      <i className={this.props.steps[this.state.currentStep].stepIcon}/>
-                    ):null
-                  }
-                  {this.props.steps[this.state.currentStep].stepDesc || this.props.steps[this.state.currentStep].stepName}
-                </div>
+
               </div>
             </CardHeader>
           ) : null}
