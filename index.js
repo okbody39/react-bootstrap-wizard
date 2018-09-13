@@ -87,8 +87,7 @@ class ReactWizard extends React.Component {
         this.setState({
           wizardData: {
             ...this.state.wizardData,
-            ...this.refs[this.props.steps[this.state.currentStep].stepName]
-              .state
+            ...this.refs[this.props.steps[this.state.currentStep].stepName].state
           },
           currentStep: key,
           nextButton: this.props.steps.length > key + 1 ? true : false,
@@ -157,8 +156,7 @@ class ReactWizard extends React.Component {
         {
           wizardData: {
             ...this.state.wizardData,
-            ...this.refs[this.props.steps[this.state.currentStep].stepName]
-              .state
+            ...this.refs[this.props.steps[this.state.currentStep].stepName].state
           }
         },
         () => {
