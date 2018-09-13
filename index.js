@@ -56,6 +56,9 @@ class ReactWizard extends React.Component {
   }
   componentDidMount() {
     this.refreshAnimation(0);
+
+    console.log(this.props.steps);
+
     window.addEventListener("resize", this.updateWidth.bind(this));
   }
   componentWillUnmount(){
