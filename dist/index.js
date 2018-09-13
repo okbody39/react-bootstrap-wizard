@@ -258,7 +258,7 @@ var ReactWizard = function (_React$Component) {
                 "div",
                 { className: "moving-tab", style: this.state.movingTabStyle },
                 this.props.steps[this.state.currentStep].stepIcon !== undefined && this.props.steps[this.state.currentStep].stepIcon !== "" ? _react2.default.createElement("i", { className: this.props.steps[this.state.currentStep].stepIcon }) : null,
-                this.props.steps[this.state.currentStep].stepDesc
+                this.props.steps[this.state.currentStep].stepDesc || ''
               )
             )
           ) : null,

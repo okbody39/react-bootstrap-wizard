@@ -253,7 +253,7 @@ class ReactWizard extends React.Component {
                       <i className={this.props.steps[this.state.currentStep].stepIcon}/>
                     ):null
                   }
-                  {this.props.steps[this.state.currentStep].stepDesc}
+                  {this.props.steps[this.state.currentStep].stepDesc || ''}
                 </div>
               </div>
             </CardHeader>
