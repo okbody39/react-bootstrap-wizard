@@ -103,10 +103,10 @@ class ReactWizard extends React.Component {
     if (
       (this.props.validate &&
         ((this.refs[this.props.steps[this.state.currentStep].stepName]
-          .isValidated !== undefined &&
+            .isValidated !== undefined &&
           this.refs[
             this.props.steps[this.state.currentStep].stepName
-          ].isValidated()) ||
+            ].isValidated()) ||
           this.refs[this.props.steps[this.state.currentStep].stepName]
             .isValidated === undefined)) ||
       this.props.validate === undefined || !this.props.validate
@@ -145,10 +145,10 @@ class ReactWizard extends React.Component {
     if (
       this.props.validate &&
       ((this.refs[this.props.steps[this.state.currentStep].stepName]
-        .isValidated !== undefined &&
+          .isValidated !== undefined &&
         this.refs[
           this.props.steps[this.state.currentStep].stepName
-        ].isValidated()) ||
+          ].isValidated()) ||
         this.refs[this.props.steps[this.state.currentStep].stepName]
           .isValidated === undefined) &&
       this.props.finishButtonClick !== undefined
