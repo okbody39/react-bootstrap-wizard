@@ -246,7 +246,15 @@ class ReactWizard extends React.Component {
                     );
                   })}
                 </Nav>
-
+                <div className="moving-tab" style={this.state.movingTabStyle}>
+                  {
+                    this.props.steps[this.state.currentStep].stepIcon !== undefined &&
+                    this.props.steps[this.state.currentStep].stepIcon !== "" ? (
+                      <i className={this.props.steps[this.state.currentStep].stepIcon}/>
+                    ):null
+                  }
+                  {this.props.steps[this.state.currentStep].stepDesc}
+                </div>
               </div>
             </CardHeader>
           ) : null}
