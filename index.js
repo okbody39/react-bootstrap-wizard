@@ -23,13 +23,13 @@ class ReactWizard extends React.Component {
     } else {
       if (window.innerWidth < 600) {
         if (this.props.steps.length !== 3) {
-          width = "50%";
+          width = "80%";
         } else {
           width = 100 / 3 + "%";
         }
       } else {
         if (this.props.steps.length === 2) {
-          width = "50%";
+          width = "80%";
         } else {
           width = 100 / 3 + "%";
         }
