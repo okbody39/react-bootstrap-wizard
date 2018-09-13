@@ -23,15 +23,15 @@ class ReactWizard extends React.Component {
     } else {
       if (window.innerWidth < 600) {
         if (this.props.steps.length !== 3) {
-          width = "20%";
+          width = "50%";
         } else {
-          width = 100 / 3 + "%";
+          width = 100 / 2 + "%";
         }
       } else {
         if (this.props.steps.length === 2) {
-          width = "20%";
+          width = "50%";
         } else {
-          width = 100 / 3 + "%";
+          width = 100 / 2 + "%";
         }
       }
     }
@@ -366,6 +366,7 @@ ReactWizard.propTypes = {
   steps: PropTypes.arrayOf(
     PropTypes.shape({
       stepName: PropTypes.string.isRequired,
+      stepDesc: PropTypes.string,
       stepIcon: PropTypes.string,
       component: PropTypes.func.isRequired
     })

@@ -40,15 +40,15 @@ var ReactWizard = function (_React$Component) {
     } else {
       if (window.innerWidth < 600) {
         if (_this.props.steps.length !== 3) {
-          width = "80%";
+          width = "50%";
         } else {
-          width = 100 / 3 + "%";
+          width = 100 / 2 + "%";
         }
       } else {
         if (_this.props.steps.length === 2) {
-          width = "80%";
+          width = "50%";
         } else {
-          width = 100 / 3 + "%";
+          width = 100 / 2 + "%";
         }
       }
     }
@@ -362,6 +362,7 @@ ReactWizard.propTypes = {
   description: _propTypes2.default.node,
   steps: _propTypes2.default.arrayOf(_propTypes2.default.shape({
     stepName: _propTypes2.default.string.isRequired,
+    stepDesc: _propTypes2.default.string,
     stepIcon: _propTypes2.default.string,
     component: _propTypes2.default.func.isRequired
   })).isRequired
